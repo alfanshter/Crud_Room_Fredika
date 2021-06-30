@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity"
+    android:background="@color/birudark"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/laptop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama : Fredika Achmad Fadilla"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nim : 18305141008"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobi : Travelling"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat : Bandar Lampung"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Hadirnya App ini guna membantu pengolahan data bagi penjual laptop yang ada di indonesia.."
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

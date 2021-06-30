@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Laptop-Ku</string>
+    <string name="namalaptop">Nama Laptop</string>
+    <string name="mereklaptop">Merek Laptop</string>
+    <string name="harga">Harga</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="hapus">Hapus</string>
+    <string name="update">Update</string>
+    <string name="profil">Profil</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="home"
+            type="com.fredika.ppm_fredika.MainActivity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/birudark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="@string/app_name"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/textmenu1" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textmenu1"
+                android:id="@+id/btn_additem">
+
+                <ImageView
+                    android:id="@+id/img_book"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_baseline_add_circle_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jual Laptop"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/addmenu"
+                    android:fontFamily="@font/poppins"
+                    android:layout_toRightOf="@+id/img_book"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textmenu1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btn_logout"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/img_power"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_baseline_power_settings_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/logout"
+                    android:fontFamily="@font/poppins"
+                    android:layout_toRightOf="@+id/img_power"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_additem"
+                android:id="@+id/btn_profil">
+
+                <ImageView
+                    android:id="@+id/img_books"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profil"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_toRightOf="@+id/img_books"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="Daftar Laptop"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/btn_profil"
+                android:id="@+id/txt_menu1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_menu1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:id="@+id/barismenu4">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/rv_listitem" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>
